@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENZA - Impulsando Microemprendimientos</title>
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE SEGURIDAD SSL -->
+    <div class="ssl-bar">
+        <div class="ssl-info">
+            <i class="fa-solid fa-lock"></i>
+            <span>Conexión Segura mediante Certificado SSL 256-bit Validado</span>
+        </div>
+        <div>
+            <span>Soporte: venza.tuemprendimiento1@gmail.com</span>
+        </div>
+    </div>
+
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <!-- Logotipo Oficial Vectorial en Alta Resolución con Fondo Transparente basado en la identidad visual de la marca[cite: 1] -->
+                <svg class="venza-logo-svg" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45,30 C30,15 10,25 20,45 C25,55 40,50 45,65 C50,80 30,85 20,75" fill="none" stroke="url(#grad1)" stroke-width="6" stroke-linecap="round"/>
+                    <circle cx="65" cy="45" r="8" fill="none" stroke="#d97757" stroke-width="5"/>
+                    <circle cx="35" cy="70" r="5" fill="#d97757"/>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#d97757;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#b85d3f;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <text x="85" y="65" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="42" fill="#d97757" letter-spacing="3">VENZA</text>
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#catalogo">Catálogo 2K</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><button class="btn-outline" onclick="openModal('authModal')">Acceso Empresas</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Impulsamos el Talento de tu Microemprendimiento</h1>
+            <p>Elevamos la visibilidad de tus productos con vitrinas digitales de alta calidad 2K y campañas segmentadas.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openModal('authModal')">Registra tu Emprendimiento</button>
+                <a href="#catalogo" class="btn-outline">Explorar Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="about">
+        <h2>Quiénes Somos</h2>
+        <p>En <strong>VENZA</strong> somos una plataforma dedicada a potenciar microemprendimientos locales. Brindamos el espacio tecnológico, la optimización visual de productos en calidad 2K y el apalancamiento publicitario mediante estrategias de retargeting para conectar tus productos directamente con tus clientes ideales.</p>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUCTOS (IMÁGENES 2K DE ALTA CALIDAD) -->
+    <section id="catalogo" class="catalog">
+        <h2 class="section-title">Vitrina de Microemprendimientos</h2>
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=2048&q=80" alt="Artesanía Textil">
+                    <span class="badge-2k">Calidad 2K</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Artesanías Local</p>
+                    <h3 class="product-title">Mochila Tejida a Mano</h3>
+                    <p class="product-price">$ 120.000 COP</p>
+                    <button class="btn-primary" style="width: 100%; padding: 8px;" onclick="openModal('authModal')">Contactar Emprendedor</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=2048&q=80" alt="Cosmética Natural">
+                    <span class="badge-2k">Calidad 2K</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Belleza Orgánica</p>
+                    <h3 class="product-title">Kit de Cuidado Facial Natural</h3>
+                    <p class="product-price">$ 85.000 COP</p>
+                    <button class="btn-primary" style="width: 100%; padding: 8px;" onclick="openModal('authModal')">Contactar Emprendedor</button>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1608248597359-4d8b94a28f86?auto=format&fit=crop&w=2048&q=80" alt="Repostería Artesanal">
+                    <span class="badge-2k">Calidad 2K</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Repostería Gourmet</p>
+                    <h3 class="product-title">Caja de Brownies Artesanales</h3>
+                    <p class="product-price">$ 45.000 COP</p>
+                    <button class="btn-primary" style="width: 100%; padding: 8px;" onclick="openModal('authModal')">Contactar Emprendedor</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y REDES -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas o quieres subir los productos de tu microemprendimiento? Escríbenos directamente a <strong>venza.tuemprendimiento1@gmail.com</strong></p>
+            
+            <form>
+                <input type="text" class="form-control" placeholder="Tu Nombre / Emprendimiento" required>
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                <textarea class="form-control" placeholder="¿Cómo podemos ayudarte a crecer?" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/equipo_venza?mdxt=MTVuMmEwd25reXZmZQ==" target="_blank" class="social-btn">
+                    <i class="fa-brands fa-instagram"></i> Síguenos en Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE ACCESO / REGISTRO DE EMPRESAS -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('authModal')">&times;</span>
+            <h2 style="margin-bottom: 20px; color: var(--accent-color);">Portal de Emprendedores</h2>
+            <p style="margin-bottom: 20px; font-size: 0.95rem;">Inicia sesión o regístrate para comenzar a subir tus productos en calidad 2K.</p>
+            <form>
+                <input type="email" class="form-control" placeholder="Correo de la empresa" required>
+                <input type="password" class="form-control" placeholder="Contraseña" required>
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Ingresar / Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- BANNER DE COOKIES Y TÉRMINOS -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p>Utilizamos cookies propias y de terceros para optimizar tu experiencia y realizar campañas de retargeting publicitario. <a href="javascript:void(0)" onclick="openModal('termsModal')" style="color: #d97757; text-decoration: underline;">Ver Términos y Condiciones</a></p>
+        <button class="btn-primary" onclick="acceptCookies()">Aceptar</button>
+    </div>
+
+    <!-- MODAL TÉRMINOS Y CONDICIONES -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('termsModal')">&times;</span>
+            <h2 style="margin-bottom: 15px;">Términos y Privacidad</h2>
+            <p style="font-size: 0.9rem; margin-bottom: 15px;">En <strong>VENZA</strong> protegemos los datos de nuestros microemprendedores y visitantes conforme a las normativas vigentes. El uso de nuestra plataforma implica la aceptación de políticas de cookies y almacenamiento seguro con encriptación SSL.</p>
+            <button class="btn-primary" onclick="closeModal('termsModal')">Entendido</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 VENZA - Todos los derechos reservados. Contacto: venza.tuemprendimiento1@gmail.com</p>
+        <p style="margin-top: 5px;"><a href="javascript:void(0)" onclick="openModal('termsModal')">Términos de Acuerdo y Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
